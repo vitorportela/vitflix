@@ -1,0 +1,43 @@
+@media screen and (max-width: 700px){
+
+    header .container{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .filme-principal {
+        justify-content:flex-start;
+        background-position-y: 0% !important;
+        background-position-x: 50% !important;
+        background-size: 700px !important;
+    }
+
+
+    .filme-principal .titulo{
+        margin-top: 20px;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .botoes{
+        height: 200px;
+        width: 250px;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 200px;
+        height: 45px;
+
+
+    }
+    header .logo  {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 50%;
+
+    }
+
+}
