@@ -2,8 +2,7 @@ function clique(numero) {
 
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  
-    //document.getElementById("imagem").src = imagem[numero];
+
     document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("+imagem[numero]+")";
     document.getElementById("titulo").innerHTML = titulo[numero];
     document.getElementById("resumo").innerHTML =  resumo[numero];

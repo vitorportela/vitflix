@@ -15,6 +15,9 @@ body{
     background: var(--cor1);
     font-family: 'Arial', Times, serif;
     color: var(--cor4);
+    
+    /*TRAVA SCROLL*/
+    /*overflow: hidden*/
 
 }
 
@@ -46,6 +49,18 @@ header nav a:hover{
     margin: 5px 0 5px 0;
     background-color: var(--cor2);
 }
+/*Video*/
+.video{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)100%);
+    z-index:2;
+    display: none;
+
+}
 
 /*FILME PRINCIPAL*/
 .filme-principal{
@@ -61,8 +76,9 @@ header nav a:hover{
 }
 
 .filme-principal .descricao{
+    height: 190px;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .filme-principal .titulo{
@@ -71,12 +87,18 @@ header nav a:hover{
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
+.botoes{
+    display: block;
+    top: 380px;
+}
+
 .botao{
+
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
     border-radius: 10px;
-
+    width: 130px;
     padding: 15px;
     margin-right: 15px;
     font-size: 12px;

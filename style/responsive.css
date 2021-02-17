@@ -11,13 +11,21 @@
         background-position-x: 50% !important;
         background-size: 700px !important;
     }
-
+    .filme-principal .container{
+        width: 90%;
+    }
 
     .filme-principal .titulo{
         margin-top: 20px;
         font-size: 40px;
         font-family: 'Trebuchet MS', Arial, sans-serif;
     }
+    .filme-principal .descricao{
+        height: 145px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .botoes{
         height: 200px;
         width: 250px;
@@ -36,7 +44,7 @@
 
 @media screen and (min-width: 1000px){
     .descricao{
-        width: 50%;
+        width: 60%;
 
     }
 
