@@ -23,15 +23,17 @@
             </nav>
         </div>
     </header>
-    <div class="video"></div>
+    <div id="fundo" class="fundo" onclick="hidefundo()">
+        <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/v6jmKLAW928" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="divisor"></div>
     <main>
-        <div id="imagem" class="filme-principal" style="background: url(/img/capa-house.jpg);">
+        <div id="imagem" class="filme-principal" style="background: url(/img/capa-house.jpg);" >
             <div class="container">
                 <h3 id="titulo" class="titulo">HOUSE OF CARDS</h3>
                 <p id="resumo" class="descricao">Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Aenean aliquam molestie leo, vitae iaculis nisl.</p>
                 <div class="botoes">            
-                    <button role="button" class="botao">
+                    <button id="bt-trailer" role="button" class="botao" onclick="trailer(1)">
                         <i class="fas fa-play"></i>
                         TRAILER
                     </button>

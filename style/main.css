@@ -18,7 +18,6 @@ body{
     
     /*TRAVA SCROLL*/
     /*overflow: hidden*/
-
 }
 
 header .container{
@@ -50,7 +49,7 @@ header nav a:hover{
     background-color: var(--cor2);
 }
 /*Video*/
-.video{
+.fundo{
     position: fixed;
     bottom: 0;
     right: 0;
@@ -59,7 +58,16 @@ header nav a:hover{
     background:linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)100%);
     z-index:2;
     display: none;
+    text-align: center;
+    padding-top: 10%;
 
+
+
+}
+
+.video{
+    align-items: center;
+    justify-content:center ;
 }
 
 /*FILME PRINCIPAL*/

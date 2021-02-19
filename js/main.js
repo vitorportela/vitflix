@@ -1,15 +1,27 @@
+function trailer(numero){
+    document.getElementById("fundo").style.display = "block";
+}
+
+function hidefundo(){
+    fundo = document.getElementById("fundo");
+    fundo.style.display = "none";
+    var iframe = fundo.querySelector( 'iframe');
+    var iframeSrc = iframe.src;
+    iframe.src = iframeSrc;
+}
+
 function clique(numero) {
 
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 
-    document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("+imagem[numero]+")";
-    document.getElementById("titulo").innerHTML = titulo[numero];
-    document.getElementById("resumo").innerHTML =  resumo[numero];
+    document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("+imagens[numero]+")";
+    document.getElementById("titulo").innerHTML = titulos[numero];
+    document.getElementById("resumo").innerHTML =  resumos[numero];
 }
 
 
-var imagem = ["teste","https://www.themoviedb.org/t/p/original/grbqn667G0LSdwsocBfIayiJvtq.jpg",
+var imagens = ["teste","https://www.themoviedb.org/t/p/original/grbqn667G0LSdwsocBfIayiJvtq.jpg",
 "https://www.themoviedb.org/t/p/original/ugoims6PfRgcAcIgTRoK2uvjhOu.jpg",
 "https://www.themoviedb.org/t/p/original/xLsM5yTg9he5PWXXbrwzw1Wg8xp.jpg",
 "https://www.themoviedb.org/t/p/original/fAJuZDEkrqmYQUUDrro8wRqb2Tn.jpg",
@@ -21,7 +33,7 @@ var imagem = ["teste","https://www.themoviedb.org/t/p/original/grbqn667G0LSdwsoc
 "https://www.themoviedb.org/t/p/original/gaqWbJ9Qde3z9xlvGh3FtIn7e40.jpg",
 "https://www.themoviedb.org/t/p/original/58Gl3xXEvhF557tZER55rbPiMOT.jpg",
 "https://www.themoviedb.org/t/p/original/fatz1aegtBGh7KS0gipcsw9MqUn.jpg"];
-var titulo = ["Vitor Portela","NOVA ORDEM ESPACIAL",
+var titulos = ["Vitor Portela","NOVA ORDEM ESPACIAL",
 "RELATOS DO MUNDO",
 "MALCOLM E MARIE",
 "PARA TODOS OS GAROTOS",
@@ -33,7 +45,7 @@ var titulo = ["Vitor Portela","NOVA ORDEM ESPACIAL",
 "DESTRUIÇÃO FINAL",
 "ZONA DE COMBATE",
 "JUDAS E O MESSIAS NEGRO"];
-var resumo = ["","Perseguindo detritos espaciais e sonhos distantes no ano de 2092, quatro desajustados descobrem segredos explosivos durante a tentativa de comércio de um humanoide.‎",
+var resumos = ["","Perseguindo detritos espaciais e sonhos distantes no ano de 2092, quatro desajustados descobrem segredos explosivos durante a tentativa de comércio de um humanoide.‎",
 "Um veterano de guerra que viaja de cidade em cidade lendo as notícias faz uma perigosa viagem pelo Texas para levar uma garotinha órfã até seu novo lar.",
 "Um cineasta chega em casa após a première de seu novo filme. Enquanto aguarda a liberação das críticas, ele e sua namorada se veem desenrolando os muitos problemas e segredos do seu relacionamento.",
 "Lara Jean Covey está prestes a se formar e iniciar uma nova fase de sua vida. Durante duas viagens marcantes, ela começa a avaliar como ficará sua relação com a família, os amigos e o namorado após a formatura.",
@@ -45,3 +57,16 @@ var resumo = ["","Perseguindo detritos espaciais e sonhos distantes no ano de 20
 "Quando cientistas descobrem que um cometa atingirá a Terra em poucos dias e provavelmente causará a extinção da humanidade, uma família tenta cruzar o país para chegar a sua única esperança de sobrevivência: um grupo de abrigos subterrâneos em Greenland.",
 "Em um futuro próximo, um piloto de drone e um androide ultrassecreto trabalham lado a lado no campo de batalha para evitar um ataque nuclear.",
 "A história de Fred Hampton, um dos líderes do Partido dos Panteras Negras, que foi assassinado em 1969 sob as ordens do FBI, que coagiu um pequeno criminoso chamado William O'Neal para ajudá-los a silenciar Hampton."];
+
+var links = ["https://www.youtube.com/watch?v=v6jmKLAW928",
+"https://www.youtube.com/watch?v=OawrKhc3XdM&t",
+"https://www.youtube.com/watch?v=x24-QURldsE",
+"https://www.youtube.com/watch?v=wwaPEbdu6o4",
+"https://www.youtube.com/watch?v=9tOME28jr2U",
+"https://www.youtube.com/watch?v=hWBxoH4-4yw",
+"https://www.youtube.com/watch?v=ZHtPm8v-yNw",
+"https://www.youtube.com/watch?v=dBUsVqqDhsY",
+"https://www.youtube.com/watch?v=VvqqrbaMKtk",
+"https://www.youtube.com/watch?v=hresXHZox5w",
+"https://www.youtube.com/watch?v=71QFeMSE3qU",
+"https://www.youtube.com/watch?v=GSJTm3RkS3w"];
