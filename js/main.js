@@ -1,8 +1,11 @@
-function trailer(numero){
+var numerofilme = 0;
+function trailer(){
+    /*document.getElementsByTagName("BODY")[0].style.overflow = "hidden";*/
     document.getElementById("fundo").style.display = "block";
+    document.getElementById("video").src = "https://www.youtube.com/embed/"+links[numerofilme];
 }
-
 function hidefundo(){
+    /*document.getElementsByTagName("BODY")[0].style.overflow = "auto";*/
     fundo = document.getElementById("fundo");
     fundo.style.display = "none";
     var iframe = fundo.querySelector( 'iframe');
@@ -18,10 +21,22 @@ function clique(numero) {
     document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("+imagens[numero]+")";
     document.getElementById("titulo").innerHTML = titulos[numero];
     document.getElementById("resumo").innerHTML =  resumos[numero];
+    document.getElementById("botoes").style.display = "block";
+    document.getElementById("sociais").style.display = "none";
+    numerofilme = numero;
 }
 
+function home(){
 
-var imagens = ["teste","https://www.themoviedb.org/t/p/original/grbqn667G0LSdwsocBfIayiJvtq.jpg",
+    document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(/img/m00b.jpg)";
+    document.getElementById("titulo").innerHTML = titulos[0];
+    document.getElementById("resumo").innerHTML =  resumos[0];
+    document.getElementById("botoes").style.display = "none";
+    document.getElementById("sociais").style.display = "block";
+}
+
+var imagens = ["",
+"https://www.themoviedb.org/t/p/original/grbqn667G0LSdwsocBfIayiJvtq.jpg",
 "https://www.themoviedb.org/t/p/original/ugoims6PfRgcAcIgTRoK2uvjhOu.jpg",
 "https://www.themoviedb.org/t/p/original/xLsM5yTg9he5PWXXbrwzw1Wg8xp.jpg",
 "https://www.themoviedb.org/t/p/original/fAJuZDEkrqmYQUUDrro8wRqb2Tn.jpg",
@@ -33,7 +48,8 @@ var imagens = ["teste","https://www.themoviedb.org/t/p/original/grbqn667G0LSdwso
 "https://www.themoviedb.org/t/p/original/gaqWbJ9Qde3z9xlvGh3FtIn7e40.jpg",
 "https://www.themoviedb.org/t/p/original/58Gl3xXEvhF557tZER55rbPiMOT.jpg",
 "https://www.themoviedb.org/t/p/original/fatz1aegtBGh7KS0gipcsw9MqUn.jpg"];
-var titulos = ["Vitor Portela","NOVA ORDEM ESPACIAL",
+var titulos = ["Vitor Portela",
+"NOVA ORDEM ESPACIAL",
 "RELATOS DO MUNDO",
 "MALCOLM E MARIE",
 "PARA TODOS OS GAROTOS",
@@ -45,7 +61,8 @@ var titulos = ["Vitor Portela","NOVA ORDEM ESPACIAL",
 "DESTRUIÇÃO FINAL",
 "ZONA DE COMBATE",
 "JUDAS E O MESSIAS NEGRO"];
-var resumos = ["","Perseguindo detritos espaciais e sonhos distantes no ano de 2092, quatro desajustados descobrem segredos explosivos durante a tentativa de comércio de um humanoide.‎",
+var resumos = ["O Projeto VITFLIX (clone do netflix) foi criado utilizando tecnologias simples como HTML5, CSS3 e JavaScript.",
+"Perseguindo detritos espaciais e sonhos distantes no ano de 2092, quatro desajustados descobrem segredos explosivos durante a tentativa de comércio de um humanoide.‎",
 "Um veterano de guerra que viaja de cidade em cidade lendo as notícias faz uma perigosa viagem pelo Texas para levar uma garotinha órfã até seu novo lar.",
 "Um cineasta chega em casa após a première de seu novo filme. Enquanto aguarda a liberação das críticas, ele e sua namorada se veem desenrolando os muitos problemas e segredos do seu relacionamento.",
 "Lara Jean Covey está prestes a se formar e iniciar uma nova fase de sua vida. Durante duas viagens marcantes, ela começa a avaliar como ficará sua relação com a família, os amigos e o namorado após a formatura.",
@@ -58,15 +75,16 @@ var resumos = ["","Perseguindo detritos espaciais e sonhos distantes no ano de 2
 "Em um futuro próximo, um piloto de drone e um androide ultrassecreto trabalham lado a lado no campo de batalha para evitar um ataque nuclear.",
 "A história de Fred Hampton, um dos líderes do Partido dos Panteras Negras, que foi assassinado em 1969 sob as ordens do FBI, que coagiu um pequeno criminoso chamado William O'Neal para ajudá-los a silenciar Hampton."];
 
-var links = ["https://www.youtube.com/watch?v=v6jmKLAW928",
-"https://www.youtube.com/watch?v=OawrKhc3XdM&t",
-"https://www.youtube.com/watch?v=x24-QURldsE",
-"https://www.youtube.com/watch?v=wwaPEbdu6o4",
-"https://www.youtube.com/watch?v=9tOME28jr2U",
-"https://www.youtube.com/watch?v=hWBxoH4-4yw",
-"https://www.youtube.com/watch?v=ZHtPm8v-yNw",
-"https://www.youtube.com/watch?v=dBUsVqqDhsY",
-"https://www.youtube.com/watch?v=VvqqrbaMKtk",
-"https://www.youtube.com/watch?v=hresXHZox5w",
-"https://www.youtube.com/watch?v=71QFeMSE3qU",
-"https://www.youtube.com/watch?v=GSJTm3RkS3w"];
+var links = ["",
+"v6jmKLAW928",
+"OawrKhc3XdM",
+"x24-QURldsE",
+"wwaPEbdu6o4",
+"9tOME28jr2U",
+"hWBxoH4-4yw",
+"ZHtPm8v-yNw",
+"dBUsVqqDhsY",
+"VvqqrbaMKtk",
+"hresXHZox5w",
+"71QFeMSE3qU",
+"GSJTm3RkS3w"];

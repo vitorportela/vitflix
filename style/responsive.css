@@ -40,6 +40,10 @@
     header .logo  {
         margin-left: 0px;
     }
+    .video{
+        width: 476px;
+        height: 268px;
+    }  
 }
 
 @media screen and (min-width: 1000px){
@@ -47,5 +51,9 @@
         width: 60%;
 
     }
+    .video{
+        width: 840px;
+        height: 472px;
+    }  
 
 }

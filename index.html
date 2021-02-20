@@ -16,10 +16,9 @@
         <div class="container">
             <h2 class="logo">VITFLIX</h2>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Séries</a>
+                <a href="#" onclick="home()">Home</a>
                 <a href="#">Filmes</a>
-                <a href="#">Sobre</a>
+                <a href="#">Séries</a>
             </nav>
         </div>
     </header>
@@ -28,12 +27,12 @@
     </div>
     <div class="divisor"></div>
     <main>
-        <div id="imagem" class="filme-principal" style="background: url(/img/capa-house.jpg);" >
-            <div class="container">
-                <h3 id="titulo" class="titulo">HOUSE OF CARDS</h3>
-                <p id="resumo" class="descricao">Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Aenean aliquam molestie leo, vitae iaculis nisl.</p>
-                <div class="botoes">            
-                    <button id="bt-trailer" role="button" class="botao" onclick="trailer(1)">
+        <div id="imagem" class="filme-principal" style="background-Image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(/img/m00b.jpg)" >
+            <div  class="container" onlo>
+                <h3 id="titulo" class="titulo">Vitor Portela</h3>
+                <p id="resumo" class="descricao">O Projeto VITFLIX (clone do netflix) foi criado utilizando tecnologias simples como HTML5, CSS3 e JavaScript.</p>
+                <div id="botoes" class="botoes"  style="display: none;">            
+                    <button id="bt-trailer" role="button" class="botao" onclick="trailer()">
                         <i class="fas fa-play"></i>
                         TRAILER
                     </button>
@@ -45,6 +44,21 @@
                         <i class="fas fa-info-circle"></i>
                          INFO
                     </button>
+                </div>
+                <div id="sociais" class="botoes">     
+                    <a href="https://www.linkedin.com/in/vitor-portela/">      
+                        <button role="button" class="botao" >
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn                        
+                        </button>
+                    </a>
+                    <a href="https://github.com/vitorportela">
+                        <button role="button" class="botao" >
+                            <i class="fab fa-github-square"></i>
+                            GitHub
+                        </button>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -103,41 +117,41 @@
 
         <div class="carrosel-filmes">
             <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img class="box-filme" src="img/m01.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/m02.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/m03.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/m04.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/m05.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/m06.jpg" alt="">
-                </div>
-                <div class="item">
+                <div class="item" onclick="clique(7)">
                     <img class="box-filme" src="img/m07.jpg" alt="">
                 </div>
-                <div class="item">
+                <div class="item" onclick="clique(8)">
                     <img class="box-filme" src="img/m08.jpg" alt="">
                 </div>
-                <div class="item">
+                <div class="item" onclick="clique(9)">
                     <img class="box-filme" src="img/m09.jpg" alt="">
                 </div>
-                <div class="item">
+                <div class="item" onclick="clique(10)">
                     <img class="box-filme" src="img/m10.jpg" alt="">
                 </div>
-                <div class="item">
+                <div class="item"onclick="clique(11)">
                     <img class="box-filme" src="img/m11.jpg" alt="">
                 </div>
-                <div class="item">
+                <div class="item" onclick="clique(12)">
                     <img class="box-filme" src="img/m12.jpg" alt="">
+                </div>
+                <div class="item" onclick="clique(1)">
+                    <img class="box-filme" src="img/m01.jpg" alt="">
+                </div>
+                <div class="item" onclick="clique(2)">
+                    <img class="box-filme" src="img/m02.jpg" alt="">
+                </div>
+                <div class="item" onclick="clique(3)">
+                    <img class="box-filme" src="img/m03.jpg" alt="">
+                </div>
+                <div class="item" onclick="clique(4)">
+                    <img class="box-filme" src="img/m04.jpg" alt="">
+                </div>
+                <div class="item" onclick="clique(5)">
+                    <img class="box-filme" src="img/m05.jpg" alt="">
+                </div>
+                <div class="item" onclick="clique(6)">
+                    <img class="box-filme" src="img/m06.jpg" alt="">
                 </div>
             </div>  
         </div>

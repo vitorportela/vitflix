@@ -17,7 +17,7 @@ body{
     color: var(--cor4);
     
     /*TRAVA SCROLL*/
-    /*overflow: hidden*/
+    overflow: auto;
 }
 
 header .container{
@@ -55,20 +55,23 @@ header nav a:hover{
     right: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)100%);
+    background:rgba(0,0,0,.80);
     z-index:2;
     display: none;
     text-align: center;
-    padding-top: 10%;
-
-
-
+    padding-top: 7%;
+    animation-name: example;
+    animation-duration: 1.5s;
 }
-
 .video{
-    align-items: center;
-    justify-content:center ;
-}
+    width: 700px;
+    height: 394px;
+}  
+  @keyframes example {
+    0%   {padding-top: 150%; background:rgba(0,0,0,0);}
+    100% {padding-top: 7%; background:rgba(0,0,0,.80);}
+  }
+
 
 /*FILME PRINCIPAL*/
 .filme-principal{
