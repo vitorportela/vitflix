@@ -28,7 +28,7 @@ function clique(numero) {
 
 function home(){
 
-    document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(/img/m00b.jpg)";
+    document.getElementById("imagem").style.backgroundImage = "linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(img/m00b.jpg)";
     document.getElementById("titulo").innerHTML = titulos[0];
     document.getElementById("resumo").innerHTML =  resumos[0];
     document.getElementById("botoes").style.display = "none";
